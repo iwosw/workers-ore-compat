@@ -33,6 +33,8 @@ public class WorkersOreCompatConfig {
     public static final ForgeConfigSpec.ConfigValue<List<? extends String>> ADDITIONAL_ORE_DROPS = BUILDER
             .comment("Item drops that miners should pick up (e.g. \"weirdmod:uranium_chunk\")")
             .defineListAllowEmpty("additionalOreDrops", List.of(
+                    "immersiveengineering:raw_aluminum", "immersiveengineering:raw_lead", "immersiveengineering:raw_nickel",
+                    "immersiveengineering:raw_uranium", "immersiveengineering:raw_silver",
                     "mekanism:raw_osmium", "mekanism:raw_tin", "mekanism:raw_lead", "mekanism:raw_uranium", "mekanism:fluorite_gem",
                     "geolosys:iron_cluster", "geolosys:copper_cluster", "geolosys:gold_cluster", "geolosys:aluminum_cluster",
                     "geolosys:tin_cluster", "geolosys:lead_cluster", "geolosys:nickel_cluster", "geolosys:silver_cluster",
