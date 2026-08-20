@@ -11,6 +11,8 @@ public class WorkersOreCompatConfig {
             .comment("Blocks counted as ore when a miner scans surrounding walls for ores (e.g. \"weirdmod:uranium_ore\").",
                     "Workers only consults this during wall scanning; blocks inside the mining area are broken either way.")
             .defineListAllowEmpty("additionalOreBlocks", List.of(
+                    "immersiveengineering:ore_aluminum", "immersiveengineering:ore_lead", "immersiveengineering:ore_nickel",
+                    "immersiveengineering:ore_uranium", "immersiveengineering:ore_silver", "immersiveengineering:ore_apatite",
                     "mekanism:osmium_ore", "mekanism:tin_ore", "mekanism:lead_ore", "mekanism:uranium_ore", "mekanism:fluorite_ore",
                     "geolosys:hematite_ore", "geolosys:cassiterite_ore", "geolosys:bauxite_ore", "geolosys:autunite_ore", "geolosys:platinum_ore",
                     "create:zinc_ore", "ae2:quartz_cluster", "powah:uraninite_ore", "bigreactors:yellorite_ore",
