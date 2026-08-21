@@ -1,4 +1,4 @@
-package com.example.workersorecompat.config;
+package io.github.iwosw.workersorecompat.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

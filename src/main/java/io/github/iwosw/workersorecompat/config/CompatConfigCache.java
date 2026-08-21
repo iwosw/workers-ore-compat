@@ -1,4 +1,4 @@
-package com.example.workersorecompat.config;
+package io.github.iwosw.workersorecompat.config;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;

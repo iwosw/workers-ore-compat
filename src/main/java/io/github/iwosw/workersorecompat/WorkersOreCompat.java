@@ -1,9 +1,9 @@
-package com.example.workersorecompat;
+package io.github.iwosw.workersorecompat;
 
-import com.example.workersorecompat.compat.OreBlockMatcher;
-import com.example.workersorecompat.compat.OreItemMatcher;
-import com.example.workersorecompat.config.CompatConfigCache;
-import com.example.workersorecompat.config.WorkersOreCompatConfig;
+import io.github.iwosw.workersorecompat.compat.OreBlockMatcher;
+import io.github.iwosw.workersorecompat.compat.OreItemMatcher;
+import io.github.iwosw.workersorecompat.config.CompatConfigCache;
+import io.github.iwosw.workersorecompat.config.WorkersOreCompatConfig;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TagsUpdatedEvent;

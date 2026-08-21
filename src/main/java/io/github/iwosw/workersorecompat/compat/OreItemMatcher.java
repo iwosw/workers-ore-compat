@@ -1,6 +1,6 @@
-package com.example.workersorecompat.compat;
+package io.github.iwosw.workersorecompat.compat;
 
-import com.example.workersorecompat.config.CompatConfigCache;
+import io.github.iwosw.workersorecompat.config.CompatConfigCache;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;

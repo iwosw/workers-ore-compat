@@ -1,4 +1,4 @@
-package com.example.workersorecompat.compat;
+package io.github.iwosw.workersorecompat.compat;
 
 public enum MatchResult {
     ALLOW,

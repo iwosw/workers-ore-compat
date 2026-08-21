@@ -1,7 +1,7 @@
-package com.example.workersorecompat.mixin;
+package io.github.iwosw.workersorecompat.mixin;
 
-import com.example.workersorecompat.compat.MatchResult;
-import com.example.workersorecompat.compat.OreBlockMatcher;
+import io.github.iwosw.workersorecompat.compat.MatchResult;
+import io.github.iwosw.workersorecompat.compat.OreBlockMatcher;
 import com.talhanation.workers.entities.workarea.MiningArea;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;

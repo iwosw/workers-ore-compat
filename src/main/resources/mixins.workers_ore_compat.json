@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "compatibilityLevel": "JAVA_17",
-  "package": "com.example.workersorecompat.mixin",
+  "package": "io.github.iwosw.workersorecompat.mixin",
   "refmap": "mixins.workers_ore_compat.refmap.json",
   "mixins": [
     "MinerEntityMixin",

@@ -1,7 +1,7 @@
-package com.example.workersorecompat.mixin;
+package io.github.iwosw.workersorecompat.mixin;
 
-import com.example.workersorecompat.compat.MatchResult;
-import com.example.workersorecompat.compat.OreItemMatcher;
+import io.github.iwosw.workersorecompat.compat.MatchResult;
+import io.github.iwosw.workersorecompat.compat.OreItemMatcher;
 import com.talhanation.workers.entities.MinerEntity;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
