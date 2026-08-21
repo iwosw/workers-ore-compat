@@ -49,10 +49,14 @@ public class WorkersOreCompatConfig {
             ), WorkersOreCompatConfig::validateEntry);
 
     public static final ForgeConfigSpec.ConfigValue<List<? extends String>> ADDITIONAL_ORE_DROP_TAGS = BUILDER
-            .comment("Item tags whose contents miners should pick up (e.g. \"forge:raw_materials\").",
+            .comment("Item tags whose contents miners should pick up (e.g. \"forge:raw_materials/iron\").",
                     "An entry naming an exact item in additionalOreDrops takes precedence over these.")
             .defineListAllowEmpty("additionalOreDropTags", List.of(
-                    "forge:raw_materials", "forge:ores"
+                    "forge:ores",
+                    "forge:raw_materials/iron", "forge:raw_materials/copper", "forge:raw_materials/gold",
+                    "forge:raw_materials/lead", "forge:raw_materials/silver", "forge:raw_materials/tin",
+                    "forge:raw_materials/zinc", "forge:raw_materials/nickel", "forge:raw_materials/uranium",
+                    "forge:raw_materials/osmium", "forge:raw_materials/aluminum", "forge:raw_materials/platinum"
             ), WorkersOreCompatConfig::validateEntry);
 
     public static final ForgeConfigSpec.ConfigValue<List<? extends String>> EXCLUDED_ORE_BLOCKS = BUILDER
