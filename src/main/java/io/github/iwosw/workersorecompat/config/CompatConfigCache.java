@@ -2,6 +2,7 @@ package io.github.iwosw.workersorecompat.config;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.tags.ITagManager;
+import net.minecraftforge.server.ServerLifecycleHooks;
 import org.slf4j.Logger;
 
 import java.util.LinkedHashSet;
@@ -67,7 +69,19 @@ public final class CompatConfigCache {
                     next.additionalOreDrops().size(), next.excludedOreDrops().size(), next.additionalOreDropTags().size());
         }
 
-        validateTags();
+        scheduleValidation();
+    }
+
+    /**
+     * A config reload arrives on the config-watcher thread, but tag lookups read server state, so
+     * the check is handed to the server thread instead of running inline. With no server there is
+     * nothing to validate against yet; {@link #onTagsBound()} covers that case once tags bind.
+     */
+    private static void scheduleValidation() {
+        MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
+        if (server != null) {
+            server.execute(CompatConfigCache::validateTags);
+        }
     }
 
     private static Set<ResourceLocation> parseResourceLocations(List<? extends String> rawList, String configKey) {
@@ -121,6 +135,9 @@ public final class CompatConfigCache {
     /**
      * A tag name that no datapack defines parses perfectly well and then silently matches nothing,
      * which looks exactly like the mod not working. Report those instead.
+     *
+     * <p>Runs on the server thread only: reached either from {@link #onTagsBound()} or through
+     * {@link #scheduleValidation()}.
      */
     public static void validateTags() {
         if (!tagsAvailable) return;

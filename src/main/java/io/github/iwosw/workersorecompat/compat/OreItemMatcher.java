@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -56,8 +57,11 @@ public final class OreItemMatcher {
             return MatchResult.PASS;
         }
 
-        // 4. Custom item tag check
-        for (TagKey<Item> tag : config.additionalOreDropTags()) {
+        // 4. Custom item tag check. Indexed loop rather than an enhanced for: Workers tests every
+        // nearby item entity once per tick, so an iterator per call is garbage on a hot path.
+        List<TagKey<Item>> dropTags = config.additionalOreDropTags();
+        for (int i = 0; i < dropTags.size(); i++) {
+            TagKey<Item> tag = dropTags.get(i);
             if (stack.is(tag)) {
                 logDebugOnce(config, id, "matched additionalOreDropTag #" + tag.location());
                 return MatchResult.ALLOW;

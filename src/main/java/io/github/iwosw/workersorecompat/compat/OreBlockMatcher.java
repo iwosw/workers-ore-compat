@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -52,8 +53,11 @@ public final class OreBlockMatcher {
             return MatchResult.ALLOW;
         }
 
-        // 3. Custom block tag check
-        for (TagKey<Block> tag : config.additionalOreBlockTags()) {
+        // 3. Custom block tag check. Indexed loop rather than an enhanced for: this runs for every
+        // block a miner scans, and an iterator per call is garbage the scan does not need.
+        List<TagKey<Block>> blockTags = config.additionalOreBlockTags();
+        for (int i = 0; i < blockTags.size(); i++) {
+            TagKey<Block> tag = blockTags.get(i);
             if (state.is(tag)) {
                 if (log) logDebugOnce(config, id, "matched additionalOreBlockTag #" + tag.location());
                 return MatchResult.ALLOW;

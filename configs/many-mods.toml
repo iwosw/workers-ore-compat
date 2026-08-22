@@ -1,0 +1,98 @@
+# Workers Ore Compat kitchen-sink configuration.
+# Copy this file to config/workers_ore_compat-common.toml.
+# IDs for mods that are not installed are ignored.
+
+additionalOreBlocks = [
+    # Stock entries
+    "immersiveengineering:ore_aluminum", "immersiveengineering:ore_lead", "immersiveengineering:ore_nickel",
+    "immersiveengineering:ore_uranium", "immersiveengineering:ore_silver", "immersiveengineering:ore_apatite",
+    "mekanism:osmium_ore", "mekanism:tin_ore", "mekanism:lead_ore", "mekanism:uranium_ore", "mekanism:fluorite_ore",
+    "geolosys:hematite_ore", "geolosys:cassiterite_ore", "geolosys:bauxite_ore", "geolosys:autunite_ore", "geolosys:platinum_ore",
+    "create:zinc_ore", "ae2:quartz_cluster", "powah:uraninite_ore", "bigreactors:yellorite_ore",
+    "forbidden_arcanus:arcane_crystal_ore", "undergarden:depthrock_cloggrum_ore", "undergarden:shiverstone_cloggrum_ore",
+    "mysticalagriculture:prosperity_ore", "mysticalagriculture:deepslate_prosperity_ore", "ad_astra:moon_desh_ore",
+
+    # Thermal Series
+    "thermal:apatite_ore", "thermal:deepslate_apatite_ore", "thermal:niter_ore", "thermal:deepslate_niter_ore",
+    "thermal:sulfur_ore", "thermal:deepslate_sulfur_ore",
+
+    # AllTheModium
+    "allthemodium:allthemodium_ore", "allthemodium:vibranium_ore", "allthemodium:unobtainium_ore",
+
+    # Silent Gear
+    "silentgear:crimson_iron_ore", "silentgear:azure_silver_ore",
+
+    # Draconic Evolution
+    "draconicevolution:draconium_ore", "draconicevolution:deepslate_draconium_ore",
+
+    # Occultism
+    "occultism:iesnium_ore",
+
+    # The Aether
+    "aether:ambrosium_ore", "aether:zanite_ore", "aether:gravitite_ore",
+
+    # Galosphere
+    "galosphere:silver_ore", "galosphere:deepslate_silver_ore",
+
+    # RFTools
+    "rftoolsbase:dimensional_shard_ore"
+]
+
+additionalOreBlockTags = [
+    "forge:ores",
+    "ad_astra:desh_ores", "ad_astra:ostrum_ores", "ad_astra:calorite_ores", "ad_astra:ice_shard_ores"
+]
+
+additionalOreDrops = [
+    # Stock entries
+    "immersiveengineering:raw_aluminum", "immersiveengineering:raw_lead", "immersiveengineering:raw_nickel",
+    "immersiveengineering:raw_uranium", "immersiveengineering:raw_silver",
+    "mekanism:raw_osmium", "mekanism:raw_tin", "mekanism:raw_lead", "mekanism:raw_uranium", "mekanism:fluorite_gem",
+    "geolosys:iron_cluster", "geolosys:copper_cluster", "geolosys:gold_cluster", "geolosys:aluminum_cluster",
+    "geolosys:tin_cluster", "geolosys:lead_cluster", "geolosys:nickel_cluster", "geolosys:silver_cluster",
+    "geolosys:uranium_cluster", "geolosys:zinc_cluster", "geolosys:platinum_cluster", "geolosys:nether_gold_cluster",
+    "geolosys:ancient_debris_cluster", "geolosys:anthracite_coal", "geolosys:bituminous_coal", "geolosys:lignite_coal",
+    "create:raw_zinc", "ae2:certus_quartz_crystal", "powah:uraninite_raw",
+    "bigreactors:raw_yellorium", "bigreactors:anglesite_crystal", "bigreactors:benitoite_crystal",
+    "forbidden_arcanus:arcane_crystal", "forbidden_arcanus:xpetrified_orb", "forbidden_arcanus:clibano_core",
+    "undergarden:raw_cloggrum", "undergarden:raw_froststeel", "undergarden:regalium_crystal", "undergarden:utherium_crystal",
+    "mysticalagriculture:prosperity_shard", "mysticalagriculture:inferium_essence", "mysticalagriculture:soulium_dust",
+    "ad_astra:raw_desh", "ad_astra:raw_ostrum", "ad_astra:raw_calorite", "ad_astra:ice_shard",
+
+    # Thermal Series
+    "thermal:apatite", "thermal:niter", "thermal:sulfur", "thermal:raw_tin", "thermal:raw_lead",
+    "thermal:raw_nickel", "thermal:raw_silver",
+
+    # AllTheModium
+    "allthemodium:allthemodium", "allthemodium:vibranium", "allthemodium:unobtainium",
+
+    # Silent Gear
+    "silentgear:raw_crimson_iron", "silentgear:raw_azure_silver",
+
+    # Draconic Evolution
+    "draconicevolution:draconium_dust",
+
+    # Occultism
+    "occultism:raw_iesnium", "occultism:iesnium_ingot",
+
+    # The Aether
+    "aether:ambrosium_shard", "aether:zanite_gemstone", "aether:gravitite",
+
+    # Galosphere
+    "galosphere:silver_nugget", "galosphere:silver_ingot",
+
+    # RFTools
+    "rftoolsbase:dimensional_shard"
+]
+
+additionalOreDropTags = [
+    "forge:ores",
+    "forge:raw_materials/iron", "forge:raw_materials/copper", "forge:raw_materials/gold",
+    "forge:raw_materials/lead", "forge:raw_materials/silver", "forge:raw_materials/tin",
+    "forge:raw_materials/zinc", "forge:raw_materials/nickel", "forge:raw_materials/uranium",
+    "forge:raw_materials/osmium", "forge:raw_materials/aluminum", "forge:raw_materials/platinum"
+]
+
+excludedOreBlocks = []
+excludedOreDrops = []
+debugLogging = false

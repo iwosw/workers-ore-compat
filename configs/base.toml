@@ -1,0 +1,108 @@
+# Workers Ore Compat stock configuration.
+# Copy this file to config/workers_ore_compat-common.toml.
+
+additionalOreBlocks = [
+    "immersiveengineering:ore_aluminum",
+    "immersiveengineering:ore_lead",
+    "immersiveengineering:ore_nickel",
+    "immersiveengineering:ore_uranium",
+    "immersiveengineering:ore_silver",
+    "immersiveengineering:ore_apatite",
+    "mekanism:osmium_ore",
+    "mekanism:tin_ore",
+    "mekanism:lead_ore",
+    "mekanism:uranium_ore",
+    "mekanism:fluorite_ore",
+    "geolosys:hematite_ore",
+    "geolosys:cassiterite_ore",
+    "geolosys:bauxite_ore",
+    "geolosys:autunite_ore",
+    "geolosys:platinum_ore",
+    "create:zinc_ore",
+    "ae2:quartz_cluster",
+    "powah:uraninite_ore",
+    "bigreactors:yellorite_ore",
+    "forbidden_arcanus:arcane_crystal_ore",
+    "undergarden:depthrock_cloggrum_ore",
+    "undergarden:shiverstone_cloggrum_ore",
+    "mysticalagriculture:prosperity_ore",
+    "mysticalagriculture:deepslate_prosperity_ore",
+    "ad_astra:moon_desh_ore"
+]
+
+additionalOreBlockTags = [
+    "forge:ores",
+    "ad_astra:desh_ores",
+    "ad_astra:ostrum_ores",
+    "ad_astra:calorite_ores",
+    "ad_astra:ice_shard_ores"
+]
+
+additionalOreDrops = [
+    "immersiveengineering:raw_aluminum",
+    "immersiveengineering:raw_lead",
+    "immersiveengineering:raw_nickel",
+    "immersiveengineering:raw_uranium",
+    "immersiveengineering:raw_silver",
+    "mekanism:raw_osmium",
+    "mekanism:raw_tin",
+    "mekanism:raw_lead",
+    "mekanism:raw_uranium",
+    "mekanism:fluorite_gem",
+    "geolosys:iron_cluster",
+    "geolosys:copper_cluster",
+    "geolosys:gold_cluster",
+    "geolosys:aluminum_cluster",
+    "geolosys:tin_cluster",
+    "geolosys:lead_cluster",
+    "geolosys:nickel_cluster",
+    "geolosys:silver_cluster",
+    "geolosys:uranium_cluster",
+    "geolosys:zinc_cluster",
+    "geolosys:platinum_cluster",
+    "geolosys:nether_gold_cluster",
+    "geolosys:ancient_debris_cluster",
+    "geolosys:anthracite_coal",
+    "geolosys:bituminous_coal",
+    "geolosys:lignite_coal",
+    "create:raw_zinc",
+    "ae2:certus_quartz_crystal",
+    "powah:uraninite_raw",
+    "bigreactors:raw_yellorium",
+    "bigreactors:anglesite_crystal",
+    "bigreactors:benitoite_crystal",
+    "forbidden_arcanus:arcane_crystal",
+    "forbidden_arcanus:xpetrified_orb",
+    "forbidden_arcanus:clibano_core",
+    "undergarden:raw_cloggrum",
+    "undergarden:raw_froststeel",
+    "undergarden:regalium_crystal",
+    "undergarden:utherium_crystal",
+    "mysticalagriculture:prosperity_shard",
+    "mysticalagriculture:inferium_essence",
+    "mysticalagriculture:soulium_dust",
+    "ad_astra:raw_desh",
+    "ad_astra:raw_ostrum",
+    "ad_astra:raw_calorite",
+    "ad_astra:ice_shard"
+]
+
+additionalOreDropTags = [
+    "forge:ores",
+    "forge:raw_materials/iron",
+    "forge:raw_materials/copper",
+    "forge:raw_materials/gold",
+    "forge:raw_materials/lead",
+    "forge:raw_materials/silver",
+    "forge:raw_materials/tin",
+    "forge:raw_materials/zinc",
+    "forge:raw_materials/nickel",
+    "forge:raw_materials/uranium",
+    "forge:raw_materials/osmium",
+    "forge:raw_materials/aluminum",
+    "forge:raw_materials/platinum"
+]
+
+excludedOreBlocks = []
+excludedOreDrops = []
+debugLogging = false
